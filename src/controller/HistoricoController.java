@@ -23,14 +23,17 @@ public class HistoricoController {
 			case 2:
 				if (historico.size() >= 1) {
 					historico = removerHistorico(historico, dado);
+					JOptionPane.showMessageDialog(null, "histórico Excluído");
 				}else {
-					JOptionPane.showMessageDialog(null, "Sem Historico");
+					JOptionPane.showMessageDialog(null, "Histórico Vazio");
 				}
 			break;
 			
 			case 3:
 				if (historico.size() >= 1) {
 					ConsultarHistorico(historico, dado);
+				}else {
+					JOptionPane.showMessageDialog(null, "Histórico Vazio");
 				}
 			break;
 			
